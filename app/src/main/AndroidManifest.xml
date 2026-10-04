@@ -30,6 +30,11 @@
             android:exported="false"
             android:label="@string/title_task_detail" />
 
+        <activity
+            android:name=".ui.DebugActivity"
+            android:exported="false"
+            android:label="@string/title_debug" />
+
     </application>
 
 </manifest>

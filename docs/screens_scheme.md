@@ -5,9 +5,12 @@ flowchart LR
     A["MainActivity<br/>Список задач (RecyclerView)"]
     B["AddTaskActivity<br/>Добавление задачи (заглушка)"]
     C["TaskDetailActivity<br/>Детали задачи"]
+    D["DebugActivity<br/>Отладка БД (этап 3)"]
 
     A -- "нажатие на FAB<br/>Intent" --> B
     A -- "нажатие на карточку<br/>Intent + putExtra(task_id)" --> C
+    A -- "меню ⋮ → Отладка БД" --> D
+    D -- "стрелка «назад»" --> A
     B -- "стрелка «назад»" --> A
     C -- "стрелка «назад»" --> A
 ```
@@ -16,6 +19,7 @@ flowchart LR
 |---|---|---|
 | Главный | `ui/MainActivity` | Список задач в `RecyclerView`, FAB «добавить» |
 | Добавление | `ui/AddTaskActivity` | Пока пустая заглушка (форма — этап 5) |
-| Детали | `ui/TaskDetailActivity` | Принимает `EXTRA_TASK_ID`, показывает название, дату, статус, описание |
+| Детали | `ui/TaskDetailActivity` | Принимает `EXTRA_TASK_ID`, загружает задачу из БД, показывает название, дату/время, статус, описание |
+| Отладка БД | `ui/DebugActivity` | Проверка CRUD-операций Room, вывод в Logcat (тег `TaskDb`) |
 
 > В дальнейших этапах добавятся: форма редактирования (этап 5), календарь (этап 6), настройки (этап 8).

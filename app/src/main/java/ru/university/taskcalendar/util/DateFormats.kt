@@ -1,5 +1,6 @@
 package ru.university.taskcalendar.util
 
+import ru.university.taskcalendar.data.Task
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
@@ -14,3 +15,7 @@ fun formatIsoDate(iso: String): String =
     } catch (e: Exception) {
         iso
     }
+
+/** «5 октября 2026, 18:00» (время добавляется, только если оно задано). */
+fun Task.displayDateTime(): String =
+    formatIsoDate(date) + (time?.let { ", $it" } ?: "")

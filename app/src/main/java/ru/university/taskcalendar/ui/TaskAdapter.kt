@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ru.university.taskcalendar.R
 import ru.university.taskcalendar.data.Task
-import ru.university.taskcalendar.util.formatIsoDate
+import ru.university.taskcalendar.util.displayDateTime
 
 /**
  * Adapter связывает список данных (Task) с элементами RecyclerView.
@@ -43,7 +43,7 @@ class TaskAdapter(
         val task = tasks[position]
 
         holder.title.text = task.title
-        holder.date.text = formatIsoDate(task.date)
+        holder.date.text = task.displayDateTime()
 
         if (task.isDone) {
             holder.status.setImageResource(R.drawable.ic_status_done)

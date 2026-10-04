@@ -14,6 +14,20 @@
     <string name="detail_date">Дата: %1$s</string>
     <string name="task_not_found">Задача не найдена</string>
 
+    <string name="no_description">Без описания</string>
+    <string name="empty_tasks">Задач пока нет.\nДобавьте тестовые данные через меню ⋮ → «Отладка БД».</string>
+    <string name="menu_debug">Отладка БД</string>
+
+    <!-- Отладочный экран (этап 3) -->
+    <string name="title_debug">Отладка базы данных</string>
+    <string name="debug_add">Добавить тестовые задачи</string>
+    <string name="debug_read">Прочитать все (Logcat)</string>
+    <string name="debug_update">Переключить «выполнена» у первой</string>
+    <string name="debug_delete_first">Удалить первую задачу</string>
+    <string name="debug_clear">Очистить таблицу</string>
+    <string name="debug_empty">База пуста</string>
+    <string name="debug_summary">Всего задач: %1$d, на сегодня: %2$d</string>
+
     <!-- Заглушка экрана добавления -->
     <string name="add_task_placeholder">Здесь будет форма добавления задачи (этап 5)</string>
 </resources>
