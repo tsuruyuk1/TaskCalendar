@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- «лист календаря» -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,34h44a4,4 0 0 1 4,4v36a4,4 0 0 1 -4,4H32a4,4 0 0 1 -4,-4V38a4,4 0 0 1 4,-4z" />
+    <path
+        android:fillColor="#C5CAE9"
+        android:pathData="M28,38a4,4 0 0 1 4,-4h44a4,4 0 0 1 4,4v8H28z" />
+    <!-- галочка -->
+    <path
+        android:pathData="M42,62l8,8l16,-16"
+        android:strokeWidth="5"
+        android:strokeColor="#3F51B5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

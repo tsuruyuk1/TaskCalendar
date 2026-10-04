@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Календарь задач</string>
+    <string name="header_title">Мои задачи</string>
+    <string name="subtitle_count">Всего задач: %1$d</string>
+
+    <string name="task_stub_1">Сдать лабораторную по Kotlin</string>
+    <string name="task_stub_2">Купить продукты</string>
+    <string name="task_stub_3">Подготовиться к семинару</string>
+    <string name="task_stub_4">Сходить в спортзал</string>
+    <string name="task_stub_5">Позвонить родителям</string>
+</resources>
