@@ -9,15 +9,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskCalendar">
 
-        <!-- Единственный экран этапа 1. intent-filter делает его точкой входа (иконка на рабочем столе). -->
+        <!-- Главный экран — точка входа (LAUNCHER) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Внутренние экраны: exported=false — их нельзя открыть из других приложений -->
+        <activity
+            android:name=".ui.AddTaskActivity"
+            android:exported="false"
+            android:label="@string/title_add_task" />
+
+        <activity
+            android:name=".ui.TaskDetailActivity"
+            android:exported="false"
+            android:label="@string/title_task_detail" />
 
     </application>
 

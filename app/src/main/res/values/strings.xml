@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">Календарь задач</string>
-    <string name="header_title">Мои задачи</string>
-    <string name="subtitle_count">Всего задач: %1$d</string>
 
-    <string name="task_stub_1">Сдать лабораторную по Kotlin</string>
-    <string name="task_stub_2">Купить продукты</string>
-    <string name="task_stub_3">Подготовиться к семинару</string>
-    <string name="task_stub_4">Сходить в спортзал</string>
-    <string name="task_stub_5">Позвонить родителям</string>
+    <!-- Заголовки экранов -->
+    <string name="title_add_task">Новая задача</string>
+    <string name="title_task_detail">Детали задачи</string>
+
+    <!-- Главный экран -->
+    <string name="add_task">Добавить задачу</string>
+    <string name="status_done">Выполнена</string>
+    <string name="status_pending">Не выполнена</string>
+
+    <!-- Детали -->
+    <string name="detail_date">Дата: %1$s</string>
+    <string name="task_not_found">Задача не найдена</string>
+
+    <!-- Заглушка экрана добавления -->
+    <string name="add_task_placeholder">Здесь будет форма добавления задачи (этап 5)</string>
 </resources>
